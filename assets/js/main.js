@@ -18,7 +18,7 @@ let btnClickHandler = (e) => {
     priceCounter = Math.round((priceCounter + mockData) * 100) / 100;
 
     restoreHTML = target.innerHTML;
-    target.innerHTML = priceCounter;
+    target.innerHTML = "$" + priceCounter;
     target.disabled = true;
     buttonsContainer.removeEventListener("click", btnClickHandler);
 
